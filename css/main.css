@@ -24,6 +24,10 @@ body { position: relative; }
 /* 播放按钮 */
 .button{
 	position: absolute;
+	top: 1%;
+	right: 1%;
+	width: 2rem;
+	height: 2rem;
 }
 /* 播放按钮结束 */
 /* 滚动列表设置 */
