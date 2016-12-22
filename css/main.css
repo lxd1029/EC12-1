@@ -21,6 +21,11 @@ body { position: relative; }
 .audio { position: absolute; top: 0; left: 0; z-index: 9; width: 100%; height: 3rem; }
 .audio ul { width: 100%;height: auto; list-style: none;background: rgba(0,0,0,0.4);margin:0;}
 .audio ul li{ width: 100%;height: 2.5rem; color: #fff;font-size: 1.5rem;font-family: '微软雅黑';line-height: 1.5;}
+/* 播放按钮 */
+.button{
+	position: absolute;
+}
+/* 播放按钮结束 */
 /* 滚动列表设置 */
 .onepage-pagination { display: none; }
 
