@@ -39,28 +39,50 @@
 		<section style="background-color: #f0f"></section>
 	</div>
     <div class="audio">
-    	<ul>
+    	<ul id="Audio">
     		<li>We Are Young
-    			<audio src="audio/WeAreYoung.mp3"></audio>
     		</li>
     		<li>Traveling Light
-    			<audio src="audio/TravelingLight.mp3"></audio>
     		</li>
     		<li>River Flows In You
-    			<audio src="audio/RiverFlowsInYou.mp3"></audio>
     		</li>
     		<li>我的天空
-    			<audio src="audio/我的天空.mp3"></audio>
     		</li>
     		<li>Dream It Possible
-    			<audio src="audio/DreamItPossible.mp3"></audio>
     		</li>
             <li>睡在我上铺的兄弟
-                <audio src="audio/睡在我上铺的兄弟.mp3"></audio>
             </li>
     	</ul>
+        <div class="audio-list">
+            <audio src="audio/WeAreYoung.mp3"></audio>
+            <audio src="audio/TravelingLight.mp3"></audio>
+            <audio src="audio/RiverFlowsInYou.mp3"></audio>
+            <audio src="audio/mysky.mp3"></audio>
+            <audio src="audio/DreamItPossible.mp3"></audio>
+            <audio src="audio/szwspdxd.mp3"></audio>
+        </div>
     </div>
-    <div class="button"></div>
+    <div class="button rotateAll">
+        <img src="img/audio.png">
+    </div>
+<!--     <audio src="b.mp3" controls="controls" preload id="music1" hidden></audio> -->
+<!--     <span id="bf" onclick="bf();">播放/暂停</span>
+    <span id="bf" onclick="rbf();">重新播放</span> -->
+<!--     <script>
+    
+    function bf(){
+     var audio = document.getElementById('music1'); 
+     if(audio!==null){             
+        //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+         alert(audio.paused);
+      if(audio.paused)                     {                 
+          audio.play();//audio.play();// 这个就是播放  
+      }else{
+       audio.pause();// 这个就是暂停
+      }
+     } 
+    }
+    </script> -->
     <script src="js/main.js"></script>
 </body>
 
