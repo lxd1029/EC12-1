@@ -5,7 +5,8 @@ var $sectionlen = $("section").length,
 	$bgimgodd = $(".bgimg:odd"),
 	$bgimgeven = $(".bgimg:even"),
 	$audio = $(".audio"),
-	$Audioli = $("#Audio li");
+	$Audioli = $("#Audio li"),
+	$Button=$("#Button");
 $("section").height($(window).height());
 $audio.height($(window).height());
 $(".main").height($(window).height());
@@ -33,6 +34,7 @@ setTimeout(bgimgodd, 2100);
 setTimeout(bgimgeven, 2500);
 
 /* 播放列表 */
+$Audioli.first().children('ul').css("display","block");
 $Audioli.click(function(){
 	var $index = $(this).index(),
 		$audio = $("audio")[$index],
@@ -42,5 +44,17 @@ $Audioli.click(function(){
 		this.currentTime=0;
 		});
 	$audio.play();
+	$Audioli.children('ul').css("display","none");
+	$(this).children('ul').css("display","block");
 });
 /* 播放列表结束 */
+/* 音量调节 */
+$Button.click(function(){
+	// if ($audio.hasClass('audioblock')) {
+	// 	$audio.removeClass('audioblock')
+	// }else{
+	// 	$audio.addClass('audioblock')
+	// }
+	$audio.slideToggle();
+})
+/* 音量调节结束 */
