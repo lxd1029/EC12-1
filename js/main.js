@@ -49,12 +49,10 @@ $Audioli.click(function(){
 });
 /* 播放列表结束 */
 /* 音量调节 */
-$Button.click(function(){
-	// if ($audio.hasClass('audioblock')) {
-	// 	$audio.removeClass('audioblock')
-	// }else{
-	// 	$audio.addClass('audioblock')
-	// }
+// $Button.click(function(){
+// 	$audio.slideToggle();
+// })
+$Button.on('tap',function(){
 	$audio.slideToggle();
 })
 /* 音量调节结束 */
